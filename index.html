@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<title>Web Integrate Design Template</title>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#homeMenu").click(function() {
+		$('html,body').animate({
+			scrollTop: $("#home").offset().top
+		}, 1000);
+	});
+
+	$("#anAbout").click(function() {
+		$('html,body').animate({
+			scrollTop: $("#about").offset().top
+		}, 1000);
+	});
+
+  	$("#aHistory").click(function() {
+	    $('html,body').animate({
+	        scrollTop: $("#history").offset().top
+	    }, 1000);
+	});
+
+	$("#aContact").click(function() {
+	    $('html,body').animate({
+	        scrollTop: $("#contact").offset().top
+	    }, 1000);
+	});
+
+	$("#anAbout-mobile").click(function() {
+		$('html,body').animate({
+			scrollTop: $("#about").offset().top
+		}, 1000);
+	});
+
+  	$("#aHistory-mobile").click(function() {
+	    $('html,body').animate({
+	        scrollTop: $("#history").offset().top
+	    }, 1000);
+	});
+
+	$("#aContact-mobile").click(function() {
+	    $('html,body').animate({
+	        scrollTop: $("#contact").offset().top
+	    }, 1000);
+	});
+
+
+	$("#menuIcon").click(function() {
+		var x = document.getElementById("menuItem");
+
+	  	if (x.style.display === "block") {
+	    	x.style.display = "none";
+	  	} else {
+	    	x.style.display = "block";	    
+	  	}
+	});
+});
+</script>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/design_style_2.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	/*body {font-family: "Times New Roman", Georgia, Serif;}
+	h1, h2, h3, h4, h5, h6 {
+	  	font-family: "Playfair Display";
+	  	letter-spacing: 5px;	
+	}*/
+</style>
+<body>
+
+<div class="wi-top">
+  	<div class="wi-bar wi-white wi-padding wi-card" style="letter-spacing:4px;">
+    	<a class="wi-bar-item wi-button" id="homeMenu">New York City</a>
+    	<!-- Right-sided navbar links. Hide them on small screens -->
+	    <div class="wi-right wi-hide-small">
+	      	<a class="wi-bar-item wi-button" id="anAbout">About</a>
+	      	<a class="wi-bar-item wi-button" id="aHistory">History</a>
+	      	<a class="wi-bar-item wi-button" id="aContact">Contact</a>	
+	    </div>
+
+	    <div class="wi-icon">
+	    	<a id="menuIcon" class="wi-bar-item wi-button" id="mobile-bars"><i class="fa fa-bars"></i></a>
+
+	    	<div class="wi-right" id="menuItem">
+		      	<a class="wi-button" id="anAbout-mobile">About</a>
+		      	<a class="wi-button" id="aHistory-mobile">History</a>
+		      	<a class="wi-button" id="aContact-mobile">Contact</a>	
+		    </div>
+	    </div>
+  	</div>
+</div>
+
+<!-- Header -->
+<header class="wi-display-container wi-content wi-wide" style="max-width:1600px;min-width:500px" id="home">
+  	<img class="wi-image" src="images/new-york-skyscrapers-1217442-1599x1105.jpg" alt="Hamburger Catering" width="1600" height="800">
+  	<div class="wi-display-bottomleft wi-padding-large wi-opacity">
+    	<h1 class="wi-xxlarge" style="text-shadow: 2px 2px 5px white">New York City Panoramic View</h1>
+  	</div>
+</header>
+
+<!-- Page content -->
+<div class="wi-content" style="max-width:1100px">
+  	<!-- About Section -->
+  	<div class="wi-row wi-padding-64" id="about">
+    	<div class="wi-col m6 wi-padding-large wi-hide-small">
+     		<img src="images/side-picture-of-new-york.jpg" class="wi-round wi-image wi-opacity-min" alt="Table Setting" width="600" height="750">
+    	</div>
+
+    	<div class="wi-col m6 wi-padding-large">
+      		<h1 class="wi-center">About New York</h1><br>     
+      		<p class="wi-large">The City of New York, often called New York City (NYC) or simply New York (NY), is the most populous city in the United States. With an estimated 2017 population of 8,622,698 distributed over a land area of about 302.6 square miles (784 km2), New York City is also the most densely populated major city in the United States. Located at the southern tip of the state of New York, the city is the center of the New York metropolitan area, the largest metropolitan area in the world by urban landmass and one of the world's most populous megacities, with an estimated 20,320,876 people in its 2017 Metropolitan Statistical Area and 23,876,155 residents in its Combined Statistical Area. A global power city, New York City has been described as the cultural, financial, and media capital of the world, and exerts a significant impact upon commerce, entertainment, research, technology, education, politics, tourism, art, fashion, and sports. The city's fast pace has inspired the term New York minute. Home to the headquarters of the United Nations, New York is an important center for international diplomacy.</p>	      
+	    </div>
+  	</div>
+  
+  	<hr>
+  
+  	<!-- Menu Section -->
+  	<div class="wi-row wi-padding-64" id="history">
+	    <div class="wi-col l6 wi-padding-small">
+	      	<h1 class="wi-center">The History</h1><br>
+	      	<h4>
+	      		<a href="https://en.wikipedia.org/wiki/New_York_City#Etymology" target="_blank">Etymology</a>
+	      	</h4>
+	      	<p class="wi-text-grey">In 1664, the city was named in honor of the Duke of York, who would become King James II of England.</p><br>
+	    
+	      	<h4>
+	      		<a href="https://en.wikipedia.org/wiki/New_York_City#Early_history" target="_blank">Early history</a>
+	      	</h4>
+	      	<p class="wi-text-grey">During the Wisconsinan glaciation, 75,000 to 11,000 years ago, the New York City region was situated at the edge of a large ice sheet over 1,000 feet (300 m) in depth.</p><br>
+	    
+	      	<h4>
+	      		<a href="https://en.wikipedia.org/wiki/New_York_City#Dutch_rule" target="_blank">Dutch rule</a>
+	      	</h4>
+	      	<p class="wi-text-grey">A permanent European presence in New Netherland began in 1624 – making New York the 12th oldest continuously occupied European-established settlement in the continental United States[96] – with the founding of a Dutch fur trading settlement on Governors Island.</p><br>
+	    
+	      	<h4>
+	      		<a href="https://en.wikipedia.org/wiki/New_York_City#English_rule" target="_blank">English rule</a>
+	      	</h4>
+	      	<p class="wi-text-grey">In 1664, unable to summon any significant resistance, Stuyvesant surrendered New Amsterdam to English troops, led by Colonel Richard Nicolls, without bloodshed.</p><br> 
+	    </div>
+    
+	    <div class="wi-col l6 wi-padding-large">
+	      	<img src="images/empire-state-building-1220346-477x594.jpg" class="wi-round wi-image wi-opacity-min" alt="Menu" style="width:100%">
+	    </div>
+  	</div>
+
+  	<!-- Contact Section -->
+  	<div class="wi-container wi-padding-64" id="contact">
+	    <h1>Contact</h1><br>
+	    <!--<p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+	    <p class="wi-text-blue-grey wi-large"><b>Catering Service, 42nd Living St, 43043 New York, NY</b></p>
+	    <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>-->
+	    <form action="/action_page.php" target="_blank">
+	      	<p><input class="wi-input wi-padding-16" type="text" placeholder="Name" required name="Name"></p>
+	      	<p><input class="wi-input wi-padding-16" type="number" placeholder="Phone Number" required name="People"></p>
+	      	<p><input class="wi-input wi-padding-16" type="email" placeholder="Email Address" required name="Email"></p>
+	      	<p><input class="wi-input wi-padding-16" type="text" placeholder="Enter the comments" required name="Message"></p>
+	      	<p><button class="wi-button wi-light-grey wi-section" type="submit">SUBMIT MESSAGE</button></p>
+	    </form>
+  	</div>
+  
+	<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="wi-center wi-light-grey wi-padding-32">
+  	
+</footer>
+</body>
+</html>
